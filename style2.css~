@@ -1,0 +1,583 @@
+/*
+SOMMAIRE CSS
+- Reset CSS 
+- Règles générales
+- Images
+- Header 
+- Patti studio
+- Team
+- Citation
+- Work
+- Fun Facts
+- Services
+- Blog
+- Twitter Feed
+- Testimonials
+- Partnership
+- Contact
+- Copyright
+*/
+
+/*Reset CSS*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 1.5rem;
+	vertical-align: bottom;
+}
+
+input {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+}
+
+/*Règles générales*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #686868;
+	font-weight: 300;
+}
+
+section {
+	width: 100%;
+}
+
+h1 {
+	font-size: 3.6rem;
+	text-align: center;
+	color: #444;
+	border-bottom: 1px solid #fe7e17;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #323232;
+}
+
+.title {
+	text-transform: uppercase;
+}
+
+.social-icons__item {
+	color: #848484;
+	font-size: 1.4rem;
+}
+
+.social-icons__item:hover {
+	color: #fe7e17;
+}
+
+.section--bg-images {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*Images*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bloc-image {
+	position: relative;
+}
+
+.bloc-image__picture {
+	filter: grayscale(100%);
+}
+
+.bloc-image__search-icon:link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+}
+
+.bloc-image:hover .bloc-image__picture {
+	filter: grayscale(0%) brightness(65%);
+}
+
+.bloc-image:hover .bloc-image__search-icon {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: .2rem .5rem;
+}
+
+/*Header*/
+
+.main-menu__item:link, :visited {
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	padding: 1rem 0;
+	border-bottom: 1px solid #efefef;
+	width: 100%;
+}
+
+.main-menu__item--underline:hover, :active {
+	text-decoration: underline;
+}
+
+.main-menu__item--orange:active {
+	color: #fe7e17;
+}
+
+.main-menu__submenu {
+	display: inline-block;
+	overflow: scroll;
+}
+
+.main-menu__submenu__item {
+	text-transform: uppercase;
+}
+
+.main-menu__submenu__item:link, :visited {
+	color: #323232;
+}
+
+.main-menu__submenu__item:hover, :active {
+	color: #fe7e17;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	height: 48rem;
+	overflow: hidden;
+}
+
+.main-nav {
+	flex:1;	
+	position: fixed;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+	width: 100%;
+	background-color: #fff;
+}
+
+.main-nav__label {
+	font-size: 2.8rem;
+	color: #323232;
+	cursor: pointer;
+}
+
+.main-nav__input {
+	visibility: hidden;
+}
+
+.main-menu {
+	display: none;
+}
+
+nav input[type=checkbox]:checked + .main-menu {
+	display: flex;	
+	flex-direction : column;
+	position: fixed;
+	top: 5rem;
+	width: 100%;
+	flex-flow: column wrap;
+	background-color: #fff;
+	overflow: scroll;
+}
+
+.header-slide {
+	position: relative;
+	top: 7rem;	
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: url("images/exemple_design_class.jpg") no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+
+/*Patti Studio*/
+
+.section-hello__article-title {
+	font-weight: 800;
+	font-size: 2.4rem;
+	color: #323232;
+}
+
+/*Team*/
+
+.intro {
+	font-size: 1.8rem;
+	color: #444;
+	text-align: center;
+}
+
+.team-member__name {
+	font-size: 1.4rem;
+	color: #444;
+	font-weight: 800;
+	text-align: center;
+}
+
+.team-member__function {
+	font-size: 1.4rem;
+	color: #323232;
+	text-align: center;
+}
+
+.social-icons {
+	list-style-type: none;
+}
+
+.social-icons li {
+	display: inline-block;
+}
+
+section {
+	margin: 0;
+	width: 100%;
+}
+
+/*Citation*/
+
+.quote {
+	background-image: url("images/parallax_quote.jpg")
+}
+
+.quote__text {
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+}
+
+.quote__author {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: right;
+}
+
+/*Work*/
+
+.album-menu li{
+	display: inline-block;
+	margin-right: .5rem;
+	margin-bottom: 1.5rem;
+}
+
+.album-menu__item {
+	font-size: 1.6rem;
+	color: #686868;
+	padding: .6rem 1.2rem;
+}
+
+.album-menu__item:hover {
+	border: 1px solid #fe7e17;
+}
+
+/*Fun Facts*/
+
+.fun-facts__numbers {
+	font-size: 5.6rem;
+	font-weight: 700;
+	text-align: center;
+	color: #323232;
+}
+
+.fun-facts__facts {
+	font-size: 1.5rem;
+	color: #686868;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.services__container {
+	text-align: center;
+}
+
+/*Services*/
+
+.services {
+	background-image: url("images/parallax_services_transparent.png");
+}
+
+.services__container {
+	border: 1px solid #a8a8a9;
+}
+
+.services__container__services-icon {
+	font-size: 5.6rem;
+	color: #323232;
+	padding-top: 3.5rem;
+}
+
+.services__container__services-name {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #444;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 2rem 0;
+}
+
+.services__container:hover {
+	background-color: #fe7e17;
+}
+
+.services__container:hover .services__container__services-icon {
+	color: #fff;
+}
+
+.services__container:hover .services__container__services-name {
+	color: #fff;
+}
+
+/*Blog*/
+
+.blog-article__title {
+	font-size: 2.8rem;
+	font-weight: 700;
+	color: #323232;
+}
+
+.blog-article__title:hover {
+	color: #fe7e17;
+}
+
+.blog-article__date {
+	font-size: 1.2rem;
+	color: #a3a2a2;
+	text-transform: uppercase;
+}
+
+.blog-article__footer {
+	text-align: right;
+}
+
+.blog-article__footer__read-more {
+	color: #fe7e17;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.blog-article__footer__read-more:hover {
+	color: #444;
+}
+
+.blog-quote {
+	background-color: #323232;
+	color: #fff;
+	font-size: 2.4rem;
+}
+
+.blog-quote__author {
+	color: #a3a2a2;
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+/*Twitter Feed*/
+
+.twitter-testimonial {
+	background-image: url("images/parallax_twitter_feed_dark.png");
+}
+
+.twitter-testimonial h1 {
+	color: #fff;
+}
+
+.twitter-testimonial__date {
+	font-size: 1.4rem;
+	color: #fafafa;
+	text-align: center;
+}
+
+.twitter-testimonial__text {
+	font-size: 1.8rem;
+	color: #efefef;
+	text-align: center;
+}
+
+.twitter-testimonial__link {
+	color: #fe7e17;
+}
+
+.twitter-testimonial__link:hover {
+	color: #fff;
+}
+
+.twitter-icons__item {
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.twitter-icons__item:hover {
+	color: #fe7e17;
+}
+
+/*Testimonials*/
+
+.testimonials__text {
+	font-size: 1.8rem;
+	color: #686868;
+	text-align: center;
+}
+
+.testimonials__author {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #323232;
+	text-align: center;
+}
+
+.testimonials__author-name {
+	color: #fe7e17;
+}
+
+.testimonials__link {
+	color: #fe7e17;
+}
+
+/*Partnership*/
+
+.partners {
+	background-color: #fe7e17;
+}
+
+/*Contact*/
+
+.contact {
+	background-image: url("images/parallax_contact_dark.png");
+	color:#fff;
+}
+
+.contact h1 {
+	color: #fff;
+}
+
+.contact-list {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.contact-list__title {
+	font-size: 1.8rem;
+}
+
+.contact-list .fas {
+	padding: .4rem;
+	color: #323232;
+	background-color: #fff;
+}
+
+.contact-list__link {
+	color: #fe7e17;
+}
+
+.contact-list__link:hover {
+	color: #fff;
+}
+
+.form__area {
+	background-color: transparent;
+	border : 1px solid #fff;
+	color: #fafafa;
+	font-size: 1.5rem;
+}
+
+.form__button {
+	background-color: #323232;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 700;
+	border: 0rem;
+	border-radius: .1rem;
+}
+
+.form__button:hover {
+	background-color: #222;
+	cursor: pointer;
+}
+
+/*Copyright*/
+
+.copyright {
+	font-size: 1.4rem;
+	color: #868686;
+}
+
+.social-icons__item--border {
+	color: #868686;
+	border: 1px solid #868686;
+	padding: 1rem;
+}
+
+.social-icons__item--border:hover {
+	border: 1px solid #fe7e17;
+}
+
+/*
+
+
+
+.header_slide figure {
+	color: #fff;
+	font-size: 2em;
+}*/
+
+/*ERREUR : j'ai commencé avec la version desktop. Pause. Les règles ci-dessous seront très certainement plutôt à intégrer dans un media queries, je dois commencer par la version mobile*/
+
+/*header {
+	display: flex;
+	flex-direction: column;
+	height: 100rem;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5.5rem;
+}
+
+.header_slide {
+	flex: 1;
+	display: flex;
+	width: 100%
+	heigth: 80rem;
+	background-image: url("images/exemple_design_class.jpg");
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_slide figure {
+	margin-left: 2.5rem;
+	background-color: transparent;
+	color: #fff;
+	font-size: 4rem;
+}
+
+li {
+	display: inline-block;
+}*/

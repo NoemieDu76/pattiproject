@@ -1,0 +1,870 @@
+/**
+ * GLOBAL RULES
+ * Reset CSS...............Overwrite default browser settings
+ * Variables...............To be reused throughout the document
+ * Global rules............What applies in all document
+ *
+ * FONTS
+ * Font-size...............With class gathering
+ * Font-weight.............With class gathering
+ * Text-transform..........With class gathering
+ *
+ * COLORS
+ *
+ * COLORED LINES
+ *
+ * IMAGES
+ *
+ * INTERACTIONS
+ *
+ * BACKGROUNDS
+ *
+ * PROGRESS BARS
+ *
+ * FORM
+ * 
+ * LAYOUT
+ * Box Model
+ * Flexbox
+ * Text-align
+ * 
+ * MEDIA QUERIES
+ * 
+ */
+ 
+/*-----------------------------*\
+RESET CSS
+\*-----------------------------*/
+
+body {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 1.5rem;
+	vertical-align: baseline;
+	background-color: #fff;
+}
+
+body, h1, h2, h3, article, figure, figcaption, blockquote, form, label, div, span, img, ul, li, section, header, main, footer, p {
+	margin: 0;
+	padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: var(--black);
+}
+
+ul {
+	list-style: none;
+}
+
+/*-----------------------------*\
+VARIABLES
+\*-----------------------------*/
+
+:root {
+	--main-text-color: #686868;
+	--primary-color: #fe7e17;
+	--white: #fff;
+	--black: #323232;
+}
+
+/*-----------------------------*\
+GLOBAL RULES
+\*-----------------------------*/
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+}
+
+section {
+	padding-top: 6rem;
+}
+
+.social-icons__item:link, 
+.social-icons__item:visited {
+	color: #848484;
+	font-size: 1.4rem;
+}
+
+.social-icons__item:hover {
+	color: var(--primary-color);
+}
+
+.section--bg-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 25% 0;
+}
+
+/*-----------------------------*\
+FONTS
+\*-----------------------------*/
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/*-----------------------------*\
+FONT-SIZE
+\*-----------------------------*/
+
+h1, h2 {
+	font-size: 3.6rem;
+}
+
+.main-nav__label {
+	font-size: 2.8rem;
+}
+
+.card__title {
+	font-size: 2.6rem;
+}
+
+.blog-quote{
+	font-size: 2.4rem;
+}
+
+.card__title--medium {
+	font-size: 2rem;
+}
+
+.intro, .twitter-testimonial__text, 
+.testimonials__text, 
+.contact__title {
+	font-size: 1.8rem;
+}
+
+.card__title--little, 
+.card__subtitle, 
+.quote__author, 
+.album-menu__item, 
+.fun-facts__facts, 
+.services__container__services-name, 
+.blog-quote__author, 
+.twitter-testimonial__date, 
+.twitter-icons__item, 
+.testimonials__author, 
+.contact-list, 
+.form__area, 
+.copyright {
+	font-size: 1.5rem
+}
+
+.quote__text {
+	font-size: 3rem;
+}
+
+.fun-facts__number, 
+.services__container__services-icon {
+	font-size: 5.6rem;
+}
+
+.card__date, 
+.card__footer__read-more, 
+.form__button, 
+.progress__value {
+	font-size: 1.2rem;
+}
+
+/*-----------------------------*\
+FONT-WEIGHT
+\*-----------------------------*/
+
+body, h2 {
+	font-weight: 300;
+}
+
+.main-nav__link--bold, 
+.fun-facts__number, 
+.quote__author, 
+.services__container__services-name, 
+.card__footer__read-more, 
+.blog-quote__author, 
+.testimonials__author, 
+.form__button, 
+.progress__type {
+	font-weight: 700;
+}
+
+.card__title {
+	font-weight: 800;
+}
+
+
+
+/*-----------------------------*\
+TEXT-TRANSFORM
+\*-----------------------------*/
+
+h1, h2, 
+.card__title--uppercase, 
+.main-nav__link--second, 
+.main-nav__link, 
+.fun-facts__facts, 
+.services__container__services-name, 
+.card__date, 
+.card__footer__read-more, 
+.blog-quote__author, 
+.form__button {
+	text-transform: uppercase;
+}
+
+/*-----------------------------*\
+COLORS
+\*-----------------------------*/
+
+body {
+	color: var(--main-text-color);
+}
+
+h2, h3,
+.intro, 
+.services__container__services-name, {
+	color: #444;
+}
+
+.card__footer__read-more:link, 
+.twitter-testimonial__link:link, 
+.testimonials__author-name, 
+.testimonials__link:link, 
+.contact-list__link:link, 
+.contact-list__link:visited {
+	color: var(--primary-color);
+}
+
+.main-nav__label, 
+.card__title, 
+.card__subtitle, 
+.fun-facts__number, 
+.services__container__services-icon, 
+.testimonials__author, 
+.contact-list .fas, 
+.progress__type, 
+.contact__info .fas {
+	color: var(--black);
+}
+
+.banner__heading,
+.quote__text, 
+.blog-quote, 
+.twitter-testimonial h2, 
+.twitter-icons__item:link, 
+.contact, 
+.contact__title, 
+.contact h2, 
+.contact-list, 
+.form__button, 
+.progress__value {
+	color: var(--white);
+}
+
+.card__date, 
+.blog-quote__author {
+	color: #a3a2a2;
+}
+
+.twitter-testimonial__date, 
+.form__area {
+	color: #fafafa;
+}
+
+.twitter-testimonial__text {
+	color: #efefef;
+}
+
+.copyright, 
+.social-icons__item--border {
+	color: #868686;
+}
+
+hr {
+	color: #ebebeb;
+}
+
+/*-----------------------------*\
+COLORED LINES
+\*-----------------------------*/
+
+h2::after {
+	display: block;
+	content: "";
+	background-color: var(--primary-color);
+	height: .1rem;
+	width: 12rem;
+	margin: 1.5rem auto 2rem;
+}
+
+.team-card .card__title::after {
+	display: block;
+	content: "";
+	background-color: var(--primary-color);
+	height: .1rem;
+	width: 20%;
+	margin: .5rem auto 0;
+}
+
+/*-----------------------------*\
+IMAGES
+\*-----------------------------*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.card__figure {
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.card__image {
+	filter: grayscale(100%);
+}
+
+.image__link-icon:link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+}
+
+/*-----------------------------*\
+INTERACTIONS
+\*-----------------------------*/
+
+.card__footer__read-more:hover, 
+.testimonials__link:hover {
+	color: #444;
+}
+
+.main-nav__link--second:link, 
+.main-nav__link--second:visited {
+	color: var(--black);
+}
+
+.main-nav__link--second:hover, 
+.main-nav__link--second:active, 
+.card__title--orange:hover, 
+.twitter-icons__item:hover {
+	color: var(--primary-color);
+}
+
+.services__container:hover .services__container__services-icon, 
+.services__container:hover .services__container__services-name, 
+.twitter-testimonial__link:hover, 
+.contact-list__link:hover {
+	color: var(--white);
+}
+
+.form__button:hover {
+	background-color: #222;
+}
+
+.main-nav__link--underline:hover, 
+.main-nav__link--underline:active {
+	text-decoration: underline;
+}
+
+.card__figure:hover .card__image {
+	filter: grayscale(0%) brightness(65%);
+}
+
+.card__figure:hover .image__link-icon {
+	color: var(--white);
+	border: 1px solid var(--white);
+	padding: .2rem .5rem;
+}
+
+.album-menu__item:hover {
+	border: 1px solid var(--primary-color);
+}
+
+.services__container:hover {
+	background-color: var(--primary-color);
+}
+
+.services__container:hover .services__container__services-icon {
+	color: var(--white);
+}
+
+.services__container:hover .services__container__services-name {
+	color: var(--white);
+}
+
+.main-nav__input {
+	visibility: hidden;
+}
+
+/*.main-nav__label::after {
+	display: none;
+}
+
+.main-nav__input:checked + .main-nav__label::after {
+	display: block;
+}*/
+
+.main-nav__list {
+	display: none;
+}
+
+nav input[type=checkbox]:checked + .main-nav__list {
+	display: inline-block;
+	background-color: var(--white);
+}
+
+nav input[type=checkbox]:checked + .main-nav__list, nav input[type=checkbox]:checked + .main-nav__list ul {
+	width: 20rem;
+}
+
+nav input[type=checkbox]:checked + .main-nav__list li {
+	display: block;
+	position: relative;
+	background-color: var(--white);
+	z-index: 100;
+}
+
+nav input[type=checkbox]:checked + .main-nav__list a {
+	display: block;
+	color: var(--black);
+}
+
+nav input[type=checkbox]:checked + .main-nav__list a:hover {
+	color: var(--primary-color);
+}
+
+nav input[type=checkbox]:checked + .main-nav__list ul {
+	position: absolute;
+	left: -999rem;
+}
+
+nav input[type=checkbox]:checked + .main-nav__list li:hover ul {
+	top: 0;
+	left: -20rem;
+}
+
+/*-----------------------------*\
+BACKGROUNDS
+\*-----------------------------*/
+
+.main-nav, .contact__info .fas {
+	background-color: var(--white);
+}
+
+.quote {
+	background-image: url("images/parallax-quote.jpg");
+}
+
+.services {
+	background-image: url("images/parallax-services-transparent.png");
+}
+
+.blog-quote, .banner__heading {
+	background-color: var(--black);
+}
+
+.twitter-testimonial {
+	background-image: url("images/parallax-twitter-feed-dark.png");
+}
+
+.partners {
+	background-color: var(--primary-color);
+}
+
+.contact {
+	background-image: url("images/parallax-contact-dark.png");
+}
+
+.contact-list .fas {
+	background-color: var(--white);
+}
+
+/*-----------------------------*\
+PROGRESS BAR
+\*-----------------------------*/
+
+.progress__container {
+	width: 100%;
+}
+
+.progress__label {
+	position: relative;
+	width: 100%;
+}
+
+.progress__bar {
+	width: 100%;
+	height: 1rem;
+	margin-bottom: 2rem;
+}
+
+.progress__value {
+	background-color: var(--black);
+	color: var(--white);
+	position: absolute;
+	border-radius: .3rem;
+	padding: .2rem .4rem;
+}
+
+.progress__value--html {
+	left: 61%;
+}
+
+.progress__value--illustrator {
+	left: 41%;
+}
+
+.progress__value--photoshop {
+	left: 91%;
+}
+
+.arrow {
+	display: block;
+	width: 0;
+   height: 0;
+   position: absolute;
+	left: .7rem;
+   border-right: .8rem solid transparent;
+   border-left: .8rem solid transparent;
+   border-top: 1rem solid var(--black);
+}
+
+.progress__label {
+	margin-bottom: 1rem;
+}
+
+progress[value] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+}
+
+progress[value]::-webkit-progress-bar, .progress__bar[value]::-moz-progress-bar {
+    background-color: var(--primary-color);    
+}
+
+/*-----------------------------*\
+FORM
+\*-----------------------------*/
+
+form {
+	margin-top: 2rem;
+}
+
+.form__area {
+	background-color: transparent;
+	padding: 1rem 1.5rem;
+	margin-bottom: 2rem;
+	margin-left: .5rem;
+	border: .1rem solid var(--white);
+}
+
+.form__button {
+	width: 7rem;
+	height: 3.4rem;
+	padding: 1rem 2rem;
+	background-color: var(--black);
+	margin-bottom: 2rem;
+}
+
+/*-----------------------------*\
+LAYOUT
+\*-----------------------------*/
+
+.banner {
+	height: 70vh;
+	position: relative;
+}
+
+.banner__heading {
+	position: absolute;
+	top: 40vh; 
+	left: 4vw;
+	padding: 1.5rem;
+}
+
+/*-----------------------------*\
+Box model
+\*-----------------------------*/
+
+section {
+	padding-bottom: 3rem;
+}
+
+.gutter {
+	margin: 0 1rem;
+}
+
+h2 {
+	padding-top: 3rem;
+}
+
+.blog-quote__heading, .twitter-testimonial, .testimonials, .album-menu {
+	margin: 3rem auto;
+}
+
+.card__title, .team-card .card__subtitle, .team-card .social-icons, .card__date, .card__footer {
+	padding: 1rem 0;
+}
+
+.social-icons__item, .contact__info, .copyright, .footer-icons {
+	padding: 1.2rem;
+}
+
+.album-menu__item {
+	display: inline-block;
+	padding: .6rem 1.2rem;
+	margin: .5rem 0;
+}
+
+.fun-facts {
+	padding: 1.5rem 0;
+	margin-bottom: 2rem;
+}
+
+.card__date .fas, .contact__info .fas {
+	border: 1px solid #ccc;
+	padding: .5rem;
+	margin-right: 1rem;
+}
+
+.footer-icons .fas, .footer-icons .fab {
+	border: 1px solid #ccc;
+	padding: 1.5rem;
+}
+
+.services__container {
+	padding: 3.5rem;
+	border: solid .1rem black;
+	margin: 2rem auto;
+}
+
+[class*="album_image"] {
+	padding: .5rem 0;
+}
+
+.blog-container hr {
+	width: 34rem;
+	margin-left: 0;
+	margin-bottom: 5rem;
+}
+
+/*-----------------------------*\
+Flex
+\*-----------------------------*/
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2rem .5rem .5rem;
+	margin-left: 1rem;
+	margin-bottom: -4rem;
+}
+
+.card-about {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 33rem;
+	padding-bottom: 2rem;
+}
+
+.card-about--double-size {
+	flex: 2;
+	flex-basis: 60%;
+}
+
+.team-card {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 33rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.album, .partners ul, footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+/*-----------------------------*\
+Text-Align
+\*-----------------------------*/
+
+.intro, .twitter-testimonial article, .testimonials, .quote__text, .panel-fun-facts, .panel-services, .copyright, .footer-icons, .album-menu {
+	text-align: center;
+}
+
+.card__footer {
+	text-align: right;
+}
+
+/*-----------------------------*\
+MEDIA QUERIES
+\*-----------------------------*/
+
+
+@media only screen and (min-width: 1024px) {
+
+	section {
+		padding-bottom: 6rem;
+	}
+
+	.main-nav__label, .main-nav__input {
+		display: none;
+	}
+
+	.main-nav__list {
+		display: inline-block;
+	}
+
+	.main-nav__list ul {
+		position: absolute;
+		left: -999rem;
+		text-align: left;
+		z-index: 1000;
+	}
+
+	.main-nav__list li {
+		padding: 2rem;
+	}
+
+	.main-nav__list ul li {
+		display: inherit;
+	}
+
+	.main-nav__list a {
+		display: block;
+	}
+
+	.main-nav__list li:hover ul {
+		left: auto;
+		background-color: var(--white);
+	}
+
+	.banner {
+	height: auto;
+	position: relative;
+	}
+
+	.banner__heading {
+	position: absolute;
+	top: 50%; 
+	left: 40vw;
+	padding: 1.5rem;
+	}
+
+	.album {
+		margin: 0 .5rem;
+		display: grid;
+		grid-template: repeat(3, 20rem) / repeat(7, 1fr);
+		gap: .5rem;
+		padding-bottom: 2rem;
+	}
+
+	.album_image-third {
+		grid-area: 1 / 3 / 3 / 5;
+	}
+
+	.album_image-fourth {
+		grid-area: 1 / 5 / 3 / 6;
+	}
+
+	.album_image-fifth {
+		grid-area: 1 / 6 / 3 / 8;
+	}
+
+	.album_image-sixth {
+		grid-area: 2 / 1 / 3 / 3;
+	}
+
+	.album_image-seventh {
+		grid-area: 3 / 1 / 4 / 3;
+	}
+
+	.album_image-ninth {
+		grid-area: 3 / 4 / 4 / 6;
+	}
+
+	[class*="panel"], .partners ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 6rem;
+	}
+
+	.contact .contact-panel {
+		justify-content: space-evenly;
+	}
+
+	.gutter {
+		margin: 0 35rem;
+	}
+
+	.section--bg-image {
+		background-attachment: fixed;
+	}
+
+	.blog-container {
+	column-count: 3;
+	column-gap: 2rem;
+	}
+
+	.blog-container .card {
+	display: inline-block;
+	padding: 2rem 0;
+	column-width: 34rem;
+	}
+
+	.form__area {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
